@@ -1,0 +1,358 @@
+/*
+Theme Name: Boston Bi Women Default 1.0.1
+Theme URI: http://biwomenboston.org
+Description: The default theme for http://biwomenboston.org
+Version: 1.0.1
+Author: justin adkins
+Author URI: http://justinadkins.com/
+Revisions:
+1.0.1 by Stony Brook Web - add mobile style sheet
+
+*/
+
+
+
+/* Begin Typography & Colors */
+body {
+	font-size: 62.5%; /* Resets 1em to 10px */
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	background: #008080 url('images/background.jpg') repeat-x;
+	color: #333;
+	text-align: center;
+	}
+/* -------- Icon Code -------*/ 
+a[href $='.pdf'] {
+   padding-right: 28px;
+   background: transparent url(images/pdficon_small.jpg) no-repeat center right;
+}
+a[href$=".xls"] {
+background: transparent url(images/xlsicon_small.gif) no-repeat center right;
+   padding-right: 28px;
+}
+a[href$=".doc"] {
+background: transparent url(images/docicon_small.gif) no-repeat center right;
+   padding-right: 28px;;
+}
+/* -------- Icon Code -------*/ 
+.alignleft {
+float:left;
+}
+.alignright{
+float:right;
+}
+#page {
+	background-color: #fff;
+	text-align: left;
+	margin: 20px auto;
+	padding: 0;
+	width: 826px;
+	border: 5px solid #b2cce5;
+	
+	}
+
+#header {
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	height: 290px;
+	width: 826px;
+	background: #008080 url('images/header.jpg') no-repeat;
+	} 
+#headerimg 	{
+
+	padding: 0;
+	height: 256px;
+	width: 826px;
+	margin:auto;
+
+	}
+#headerimg a img {
+border:none;
+}
+#nav {
+
+	width:820px;
+	height:32px;
+	margin:auto;
+	color: #fff;
+	font-size:1.1em;
+	text-transform:uppercase;
+	position:relative; 
+	}
+
+
+#dropdownmenu {
+display:block;
+position:absolute;
+top:0;
+left:0;
+width:auto;
+margin:auto;
+z-index:5;
+height:auto;
+}
+
+#dropdownmenu ul {
+bottom:0;
+margin:auto;
+list-style-type:none;
+margin:0 0 2px;
+min-height:1%;
+position:relative;
+width: 100%;
+z-index:500;
+height:auto;
+
+font-weight:600;
+}
+
+#dropdownmenu li {
+display:inline;
+float:left;
+margin:0;
+padding:10px 13px;
+position:relative;
+text-align:left;
+}
+
+#dropdownmenu h2 {
+color:#FFF;
+font-size:1.2em;
+margin:0;
+padding:0;
+font-weight:bold;
+}
+
+#dropdownmenu li ul {
+height:auto;
+left:0;
+top:100%;
+width:150px;
+}
+
+#dropdownmenu li.LargeMenu ul {
+height:auto;
+left:0;
+top:100%;
+width:180px;
+}
+
+#dropdownmenu li ul li {
+display:block;
+height:auto;
+height:auto;
+text-align:left;
+width:118px;
+}
+
+#dropdownmenu li.LargeMenu ul li {
+display:block;
+height:auto;
+height:auto;
+text-align:left;
+width:148px;
+}
+
+#dropdownmenu a {
+color:#FFF;
+text-decoration:none;
+}
+
+#dropdownmenu li li ul {
+left:0;
+top:0;
+}
+
+#dropdownmenu li li:hover ul {
+left:150px;
+}
+
+/* initially hide all sub sidemenus */
+#dropdownmenu ul ul,#dropdownmenu ul li:hover ul ul,#dropdownmenu ul ul li:hover ul ul,#dropdownmenu ul ul ul li:hover ul ul,#dropdownmenu ul ul ul ul li:hover ul ul {
+display:none;
+position:absolute;
+}
+
+/* display submenus on hover */
+#dropdownmenu li:hover ul,#dropdownmenu ul li:hover ul,#dropdownmenu ul ul li:hover ul,#dropdownmenu ul ul ul li:hover ul,#dropdownmenu ul ul ul ul li:hover ul,#dropdownmenu ul ul ul ul ul li:hover ul {
+display:block;
+}
+
+#dropdownmenu #PhpWebcontent {
+display:none;
+}
+
+#dropdownmenu ul li:hover {
+background:#7cacdd;
+
+}
+
+#dropdownmenu ul li ul li {
+background:#7cacdd;
+}
+
+#dropdownmenu ul li ul ul li:hover {
+background:#7cacdd;
+}
+
+#dropdownmenu ul li ul li:hover,#dropdownmenu ul li ul ul li {
+background:#7cacdd;
+}
+#wrap{
+width:820px;
+margin: auto;
+}
+#content {
+	font-size: 1.2em
+	width:752px;
+	margin:20px auto;
+	font-size:1.2em; 
+	}
+#content ul{
+border-left: 2px solid #89bbe5;
+padding-left:5px;
+margin-left:15px;
+line-height:1.4em;
+}
+#content li{
+list-style:none;
+padding-left:5px;
+}
+a:link, a:visited{
+color: #3f607f;
+}
+a:hover{
+color: #89bbe5;
+}
+small {
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 0.9em;
+	line-height: 1.5em;
+	}
+
+h1, h2, h3 {
+	font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	font-weight: bold;
+	}
+#homecontent {
+	font-size: 1.2em;
+width:500px;
+float:left;
+margin-left: 40px;
+}
+
+#homesidebar {
+width:255px;
+float:left;
+margin-left: 25px;
+min-height:400px;
+}
+#homesidebar h3{
+text-transform:uppercase;
+}
+.home_quote{
+width:230px;
+background: #e9e2d9;
+}
+.home_updates{
+padding-bottom: 10px;
+}
+.current_issue{
+width:440px;
+background: #e9e2d9;
+}
+.home_quote p{
+width:210px;
+
+padding:10px;
+}
+#print_sidebar{
+background: #f9f8f4;
+min-height:400px;
+}
+#print_sidebar h4{
+color: #cfc7c1;
+text-transform:uppercase;
+}
+#print_sidebar hr{
+color: #cfc7c1;
+}
+#print_sidebar p{
+padding:0 10px;
+}
+
+/* column container */
+	.colmask {
+		position:relative;	/* This fixes the IE7 overflow hidden bug */
+		clear:both;
+		float:left;
+		width:100%;			/* width of whole page */
+		overflow:hidden;		/* This chops off any overhanging divs */
+	}
+	/* common column settings */
+	.colright,
+	.colmid,
+	.colleft {
+		float:left;
+		width:100%;			/* width of page */
+		position:relative;
+	}
+	.col1,
+	.col2,
+	.col3 {
+		float:left;
+		position:relative;
+		padding:0 0 1em 0;	/* no left and right padding on columns, we just make them narrower instead 
+						only padding top and bottom is included here, make it whatever value you need */
+		overflow:hidden;
+	}
+	/* 3 Column settings */
+	.threecol {
+		background:#fff;		/* right column background colour */
+	}
+	.threecol .colmid {
+		right:25%;			/* width of the right column */
+		background:#fff;		/* center column background colour */
+	}
+	.threecol .colleft {
+		right:60%;			/* width of the middle column */
+		background:#fff;	left column background colour */
+	}
+	.threecol .col1 {
+		width:56%;			/* width of center column content (column width minus padding on either side) */
+		left:102%;			/* 100% plus left padding of center column */
+	}
+	.threecol .col2 {
+		width:16%;			/* Width of left column content (column width minus padding on either side) */
+		left:31%;			/* width of (right column) plus (center column left and right padding) plus (left column left padding) */
+	}
+	.threecol .col3 {
+		width:21%;			/* Width of right column content (column width minus padding on either side) */
+		left:90%;			/* Please make note of the brackets here:
+						(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
+	}
+
+
+.people_entry{
+
+position:relative;
+
+}
+
+#people_sidebar h2{
+color: #89bbe5;
+font-size: 17px;
+font-family: "Times New Roman",Times,"Nimbus Roman","FreeSerif",serif;
+}
+#footer {
+clear:both;
+width:752px;
+height:59px;
+margin:15px auto;
+	background: #fff;
+	border-top: 2px solid #7cacdd;
+	}
+
+.nodesktop {
+	display: none;	
+}

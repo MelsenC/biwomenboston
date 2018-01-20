@@ -1,0 +1,29 @@
+div.ilsb_parent {margin:0px auto 0px 0px;}
+div.ilsb-child {position:absolute; display:none; margin:0px; padding:0px 0px 6px 0px;}
+div.ilsb-child span {padding:0px;}
+
+.ilsb {padding:3px 22px 3px 25px; line-height:26px; background-position:0 50%; background-repeat:no-repeat;}
+.ilsb-share {background-image:url(share.png);}
+.ilsb-subscribe {background-image:url(subscribe.png);}
+.ilsb-blinklist {background-image:url(blinklist.png);}
+.ilsb-bloglines {background-image:url(bloglines.png);}
+.ilsb-blogmarks {background-image:url(blogmarks.png);}
+.ilsb-digg {background-image:url(digg.png);}
+.ilsb-delicious {background-image:url(delicious.png);}
+.ilsb-facebook {background-image:url(facebook.png);}
+.ilsb-flickr {background-image:url(flickr.png);}
+.ilsb-furl {background-image:url(furl.png);}
+.ilsb-magnolia {background-image:url(magnolia.png);}
+.ilsb-newsvine {background-image:url(newsvine.png);}
+.ilsb-reddit {background-image:url(reddit.png);}
+.ilsb-stumbleupon {background-image:url(stumbleupon.png);}
+.ilsb-technorati {background-image:url(technorati.png);}
+
+.ilsb-arial {font-family:Arial, Helvetica, sans-serif;}
+.ilsb-century {font-family:'Century Gothic', 'Lucida Grande', sans-serif;}
+.ilsb-courier {font-family:'Courier New', Courier, monospace;}
+.ilsb-georgia {font-family:Georgia, 'Times New Roman', Times, serif;}
+.ilsb-lucida {font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;}
+.ilsb-tahoma {font-family:Tahoma, Verdana, Helvetica, sans-serif;}
+.ilsb-times {font-family:'Times New Roman', Times, serif;}
+.ilsb-verdana {font-family:Verdana, Arial, Helvetica, sans-serif;}

@@ -1,0 +1,156 @@
+/*Mobile Menu dropdown version 2015-06-10 */
+
+/* 
+#AF46AF; purple
+#008080; Green 
+#15c0ec
+*/
+
+
+#hamburger-switch {
+	/* background-image: url('../images/hamburger-icon.png'); */
+	background-repeat: no-repeat;
+	background-size: 64px 64px;
+	float: right;
+	height: 64px;
+	width: 64px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 99999;
+	border-bottom-left-radius: 20px;
+	background-color: #DFE1F0;
+	opacity: .7;
+}
+
+#hamburger-switch > span {
+    margin-left: 18px;
+    margin-top: 25px;
+}
+
+#hamburger-switch span::before {
+    top: -10px;
+}
+
+#hamburger-switch span::after {
+    bottom: -10px;
+}
+
+#hamburger-switch span, #hamburger-switch span::before, #hamburger-switch span::after {
+    transition-delay: 0s;
+    transition-duration: 300ms;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+
+#hamburger-switch span, #hamburger-switch span::before, #hamburger-switch span::after {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: black;
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: auto auto;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+    content: "";
+    cursor: pointer;
+    display: block;
+    height: 5px;
+    position: absolute;
+    width: 35px;
+}
+
+
+#hamburger-switch.active span::before {
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    
+}
+#hamburger-switch.active span::before, #hamburger-switch.active span::after {
+    top: 0;
+}
+
+#hamburger-switch.active span::after {
+    top: 10px;
+    transform: translateY(-10px) rotate(-45deg);
+    -ms-transform: translateY(-10px) rotate(-45deg);
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+}
+
+
+#hamburger-switch.active span {
+    background-color: transparent;
+}
+
+#mobile-menu {
+
+	position: relative;
+	
+}
+
+#mobile-menu .mobile-header {
+	display: none;
+	clear: both;
+	background-color: #008080;
+}
+
+#mobile-menu ul li, 
+#mobile-menu ul li li { text-indent: 20px; }
+
+#mobile-menu .mobile-header a {
+	display: block;
+	font-size: 18px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-decoration: none;
+}
+
+#mobile-menu .mobile-header li a, 
+#mobile-menu .mobile-header li li a {
+	color: white;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	text-transform: uppercase;	
+	background-color: #008080;
+	border-bottom: 1px solid #cccccc;
+}
+
+#mobile-menu .mobile-header li a:hover, 
+#mobile-menu .mobile-header li li a:hover {
+	background-color: #AF46AF;
+	color: white;
+}
+
+.mobile-header li li a { text-indent: 3em; }
+
+/* Current Page indicators */
+
+
+#mobile-menu .mobile-header  li.current-menu-item a, 
+#mobile-menu .mobile-header  li li.current-menu-item a,
+#mobile-menu .mobile-header  li.current_page_item > a,
+#mobile-menu .mobile-header  li li.current_page_item a,
+#mobile-menu .mobile-header li.current_page_parent > a{
+	color: white;
+	background-color: #AF46AF;
+}
+
+#mobile-menu .mobile-header  li.current-menu-item a:hover, 
+#mobile-menu .mobile-header  li li.current-menu-item a:hover
+#mobile-menu .mobile-header  li li.current_page_parent > a:hover {
+	color: white;
+	background-color: inherit;
+}
+
+/* Specific to Biwomen Boston */
+
+.mobile-header ul {
+	list-style:none;
+	text-align: left;
+	padding-left: 0;
+}

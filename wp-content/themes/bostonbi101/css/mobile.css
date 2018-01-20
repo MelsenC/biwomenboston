@@ -1,0 +1,233 @@
+@import "mobile-menu.css";
+
+@media screen and (max-width: 736px) {
+  body { 
+  	margin: 0;
+	font-size: 18px;
+	line-height: 150%;
+	}	
+	
+	p {
+		font-size: 18px;	
+	}
+	h1 {
+		font-size: 24px;
+	}
+	h2 {
+		font-size: 22px;
+	}
+	h3 {
+		font-size: 20px;
+	}
+	
+	strong {
+		font-size: 18px;	
+	}
+	
+	.nodesktop {
+		display: block;	
+	}
+  #nav { 
+  	display: none;
+	 }
+	.col2 {
+		display: none;	
+	}
+	 
+  #homesidebar { 
+  	width: 100%; 
+	margin-left: 0px; 
+	box-sizing: border-box; 
+	padding-left: 20px; 
+	padding-right: 20px;
+	}	
+  
+  #homecontent { 
+  	width: 100%; 
+	margin-left: 0px; 
+	box-sizing: border-box; 
+	padding-left: 20px; 
+	padding-right: 20px;
+	}
+	
+  #page { 
+  	width: 100%; 
+	}
+	
+  #header { 
+  	width: 100%; 
+	background-size: cover;
+	background-position: top left; 
+	height: 200px;
+	}
+	
+  #headerimg { 
+  	width: 100%; 
+	height: initial;
+	margin: 0;
+	}
+	
+  #homecontent table { 
+  	width: 100%;  
+	box-sizing:
+	}
+  #homecontent td { 
+  	width: 100%; 
+	float: left;
+	}
+  #footer {
+	  width: 100%;
+	  background-color: #008080;
+	  color: white;
+	  text-align: center;
+	  height: auto;
+	  padding-left: 20px;
+	  padding-right: 20px;
+	  box-sizing: border-box;
+	  line-height: 175%;
+	}
+
+#footer p {
+	  font-size: 14px;	
+}
+
+#homecontent {
+	font-size: 18px;
+}
+
+ #page {
+	 border: none;
+	 }
+ 
+ 
+ .alignnone,
+ .aligncenter {
+    display: block;
+    margin: 0 auto;
+}
+ 
+ 
+ .home_quote {
+ 	width: 100%;
+ }
+ 
+.home_quote p {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+.home_updates {
+    border-top: 1px dotted #008080;
+
+}
+
+
+ 
+ /* about page */
+ 
+.threecol .col1,
+.threecol .col2,
+.threecol .col3,
+threecol .colleft  {
+	clear: both;
+	float: left;
+	width: 100%; 
+ }
+ #wrap {
+	width: 100%;
+	box-sizing: border-box;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+.colmid,
+.colleft,
+.threecol .colmid,
+.threecol .colleft,
+.threecol .col1,
+.threecol .col3 {
+	right: initial;
+	left: initial;
+}
+
+/* Pins Page */
+
+#gallery-1 .gallery-item {
+    width: 100%!important;
+}
+
+dd {
+	font-size: 14px;	
+}
+
+dl {
+    margin-bottom: 10px;
+}
+
+/*resources page */
+#content ul {
+	border-left: none;	
+}
+
+#content ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* Calendar Page */
+.calendar .col3 {
+    display: none;
+}
+
+/* subscribe page */
+.subscribe .cform {
+	width: 100%;
+}
+
+.subscribe .cform label {
+    clear: both;
+    width: 100%;
+	text-align: left;
+}
+
+.subscribe .cform label span {
+    width: 100%;
+	text-align: left;
+}
+
+.subscribe .cform textarea, .subscribe .cform input {
+	width: 90%;	
+	font-size: 18px;
+}
+
+.subscribe span.reqtxt, .subscribe span.emailreqtxt {
+	display: block;
+	clear:both;	
+	margin: 0;
+	font-size: 12px;
+}
+
+.subscribe .cform select {
+	width: 80%;	
+	font-size: 18px;
+}
+
+/*hide success from mobile menu */
+
+li.page-item-336 {
+    display: none;
+}
+
+}
+
+
+@media screen and (max-width: 480px) {
+	
+	#header { 
+		height: 150px;
+	}
+	
+	
+}
