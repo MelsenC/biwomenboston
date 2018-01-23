@@ -5,6 +5,7 @@
     <meta name="viewport" content="initial-scale=1">
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Farsan" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
     <a name="top"></a>
@@ -16,26 +17,64 @@
     <div class="nav-container">
       <nav>
         <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#web-apps" class="nav-link">Events</a></li>
-          <li><a href="#code-samples" class="nav-link">Code Samples</a></li>
-          <li><a href="#projects" class="nav-link">Bi Women Quarterly</a></li>
-          <li><a href="#skills-and-tools" class="nav-link">Pins!</a></li>
-          <li class="hire-me"><a href="#donate" class="nav-link">Donate</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#connect" class="nav-link">Connect</a></li>
+          <li><a href="#read" class="nav-link">Read</a></li>
+          <li><a href="#write" class="nav-link">Write</a></li>
+          <li><a href="#pins" class="nav-link">Pins!</a></li>
+          <li class="donate"><a href="#donate" class="nav-link">Please Donate</a></li>
         </ul>
       </nav>
     </div>
-    <div class="section-container-1">
+    <div class="section-container" id="about">
 
     </div>
-    <div class="section-container-2">
+    <div class="section-container" id="connect">
+
+    </div>
+    <div class="section-container" id="read">
+
+    </div>
+    <div class="section-container" id="write">
+
+    </div>
+    <div class="section-container" id="pins">
+
+    </div>
+    <div class="section-container" id="donate">
 
     </div>
     <div class="footer-container">
       <footer>
       </footer>
     </div>
+    <script>
+      $(document).ready(function(){
+        // adapted with jQuery from this discussion: https://forum.freecodecamp.org/t/dynamically-making-font-size-change-so-it-stays-within-the-container-element-calculator-project/124462/5
+        function isOverflown(headerHeight, availableHeight) {
+          return headerHeight > availableHeight;
+        }
 
+        $(window).resize(function() {        
+          // var availableWidth = $(window).width() - parseInt($('header').css('padding-left')) - parseInt($('header').css('padding-right'));
+          // var headerWidth = $('header').width();
+          $('header').css('font-size', '');
+          let fontSize = parseInt($('header').css('font-size'));
+          for (let i = fontSize; i >= 0; i--) {
+            let availableHeight = parseInt($('header').css('line-height'));
+            let headerHeight = $('header').height();
+            let overflow = isOverflown(headerHeight, availableHeight);
+            if (overflow) {
+              fontSize--;
+              $('header').css('font-size', (fontSize + 'px'));
+            }
+          }
+        });
+
+      });
+
+    </script>
   </body>
 
 
