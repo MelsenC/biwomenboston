@@ -19,31 +19,43 @@
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#connect" class="nav-link">Connect</a></li>
           <li><a href="#read" class="nav-link">Read</a></li>
           <li><a href="#write" class="nav-link">Write</a></li>
+          <li><a href="#connect" class="nav-link">Connect</a></li>
           <li><a href="#pins" class="nav-link">Pins!</a></li>
           <li class="donate"><a href="#donate" class="nav-link">Please Donate</a></li>
         </ul>
       </nav>
     </div>
-    <div class="section-container" id="about">
-
+    <div class="section-container">
+      <section id="about">
+        <h1>About</h1>
+      </section>
     </div>
-    <div class="section-container" id="connect">
-
+    <div class="section-container">
+      <section id="read">
+        <h1>Read</h1>
+      </section>
     </div>
-    <div class="section-container" id="read">
-
+    <div class="section-container">
+      <section id="write">
+        <h1>Write</h1>
+      </section>
     </div>
-    <div class="section-container" id="write">
-
+    <div class="section-container fixed-background-image">
+      <section id="connect">
+        <h1>Connect</h1>
+      </section>
     </div>
-    <div class="section-container" id="pins">
-
+    <div class="section-container">
+      <section id="pins">
+        <h1>Pins</h1>
+      </section>
     </div>
-    <div class="section-container" id="donate">
-
+    <div class="section-container">
+      <section id="donate">
+        <h1>Donate</h1>
+      </section>
     </div>
     <div class="footer-container">
       <footer>
@@ -57,8 +69,6 @@
         }
 
         $(window).resize(function() {        
-          // var availableWidth = $(window).width() - parseInt($('header').css('padding-left')) - parseInt($('header').css('padding-right'));
-          // var headerWidth = $('header').width();
           $('header').css('font-size', '');
           let fontSize = parseInt($('header').css('font-size'));
           for (let i = fontSize; i >= 0; i--) {
