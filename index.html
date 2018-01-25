@@ -8,10 +8,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
-    <a name="top"></a>
     <div class="header-container">
       <header>
-        <a href="#">BI WOMEN &mdash; BOSTON</a>
+        <a href="#">BI WOMEN &nbsp;BOSTON</a>
       </header>
     </div>
     <div class="nav-container">
@@ -27,36 +26,85 @@
         </ul>
       </nav>
     </div>
-    <div class="section-container">
-      <section id="about">
-        <h1>About</h1>
-      </section>
-    </div>
-    <div class="section-container">
-      <section id="read">
-        <h1>Read</h1>
-      </section>
-    </div>
-    <div class="section-container">
-      <section id="write">
-        <h1>Write</h1>
-      </section>
-    </div>
-    <div class="section-container fixed-background-image">
-      <section id="connect">
-        <h1>Connect</h1>
-      </section>
-    </div>
-    <div class="section-container">
-      <section id="pins">
-        <h1>Pins</h1>
-      </section>
-    </div>
-    <div class="section-container">
-      <section id="donate">
-        <h1>Donate</h1>
-      </section>
-    </div>
+    <main>
+      <div class="section-container">
+        <section id="about">
+          <h1>About</h1>
+          <p>
+            Welcome to Bi Women Boston, the home of the Boston Bisexual Women’s Network and the <em>Bi Women Quarterly</em>, produced in Boston for women everywhere.
+          </p>
+          <p>
+            This site is an affirming space for women with bi+ (bi, pan, fluid, and other non-binary sexualities) and those who love and support us.
+          </p>
+        </section>
+      </div>
+      <div class="section-container light-background">
+        <section id="read">
+          <h1>Read</h1>
+          <img src="images/faith-sara-robyn.jpg">
+          <p>
+            The theme for the new Winter 2018 issue of the <span class="nowrap"><em>Bi Women Quarterly</em></span> is <span class="nowrap">&#8220;What I Want.&#8221;</span> <a href="wp-content/uploads/2017/11/Winter-2018.pdf">Read it here</a>.
+          </p>
+        </section>
+      </div>
+      <div class="section-container">
+        <section id="write">
+          <h1>Write</h1>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <h2>CALL FOR SUBMISSIONS:</h2>
+                <p>
+                  The theme for Spring 2018 will be &#8220;Chosen Family.&#8221;
+                </p>
+                <p>
+                  <a href="#">Read the full Call for Writing</a>
+                  <br />
+                  <a href="#">Submission Guidelines</a>
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <h2>CALL FOR SUBMISSIONS:</h2>
+                <p>
+                  The theme for Spring 2018 will be &#8220;Chosen Family.&#8221;
+                </p>
+                <p>
+                  <a href="#">Read the full Call for Writing</a>
+                  <br />
+                  <a href="#">Submission Guidelines</a>
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <h2>CALL FOR SUBMISSIONS:</h2>
+                <p>
+                  The theme for Spring 2018 will be &#8220;Chosen Family.&#8221;
+                </p>
+                <p>
+                  <a href="#">Read the full Call for Writing</a>
+                  <br />
+                  <a href="#">Submission Guidelines</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="section-container fixed-background-image">
+        <section id="connect">
+          <h1>Connect</h1>
+        </section>
+      </div>
+      <div class="section-container">
+        <section id="pins">
+          <h1>Pins</h1>
+        </section>
+      </div>
+      <div class="section-container">
+        <section id="donate">
+          <h1>Donate</h1>
+        </section>
+      </div>
+    </main>
     <div class="footer-container">
       <footer>
       </footer>
@@ -64,12 +112,13 @@
     <script>
       $(document).ready(function(){
         // adapted with jQuery from this discussion: https://forum.freecodecamp.org/t/dynamically-making-font-size-change-so-it-stays-within-the-container-element-calculator-project/124462/5
+        // this event handler function resizes the header text so it will always be on one line. Scales down when it needs to, scales back up to max stylesheet default.
         function isOverflown(headerHeight, availableHeight) {
           return headerHeight > availableHeight;
         }
 
         $(window).resize(function() {        
-          $('header').css('font-size', '');
+          $('header').css('font-size', ''); // resets the font size to the stylesheet default
           let fontSize = parseInt($('header').css('font-size'));
           for (let i = fontSize; i >= 0; i--) {
             let availableHeight = parseInt($('header').css('line-height'));
@@ -79,6 +128,18 @@
               fontSize--;
               $('header').css('font-size', (fontSize + 'px'));
             }
+          }
+        });
+
+        // this function manually creates a sticky header, and allows parallax effects for other elements on the page.
+        $(window).scroll(function() {
+          $('.nav-container').css('position', ''); // resets the position to the stylesheet default
+          $('main').css('padding-top', ''); // resets the padding of main to default
+          let fixedPosition = parseInt($('header').css('height')) + parseInt($('header').css('padding-top')) + parseInt($('header').css('padding-bottom'));
+          if ($(window).scrollTop() > fixedPosition) {
+            $('.nav-container').css('position', 'fixed');
+            $('.nav-container').scrollTop(0);
+            $('main').css('padding-top', $('.nav-container').css('height'));
           }
         });
 

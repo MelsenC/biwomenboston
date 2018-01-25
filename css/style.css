@@ -9,10 +9,16 @@ html {
 
 body {
   background: #1F0F2F;
-  color: #E8A8F8;
+  color: #F0E0FF;
   font-size: 100%;
   font-family: georgia,"times new roman",times,serif;
   height: 100%;
+}
+
+p {
+  font-size: 1.35em;
+  line-height: 1.65em;
+  padding: 10px 0 10px 0;
 }
 
 /*:focus {
@@ -34,6 +40,7 @@ header {
   font-family: 'Farsan', cursive;
   font-weight: bold;
   font-size: 85px;
+  letter-spacing: 2px;
   text-shadow: 0 0 15px #8030F0;
   line-height: 120%;
   padding: 30px 40px 10px 40px;
@@ -41,10 +48,10 @@ header {
 
 .nav-container {
   background: #A030E0;
-  position: -webkit-sticky;
-  position: sticky;
+  position: relative;
   top: 0;
   box-shadow: 0 4px 15px #4050D0;
+  width: 100%;
 }
 
 nav {
@@ -62,7 +69,7 @@ nav li {
   padding: 10px 20px 3px 20px;
 }
 
-nav li:hover {
+nav li:hover, nav li:active {
   background: #583888;
   color: #F8E8FF;
 }
@@ -85,7 +92,12 @@ a {
 }
 
 .section-container {
-  height: 20%;
+  
+}
+
+.light-background {
+  background-color: #F0E0FF;
+  color: #1F0F2F;
 }
 
 .fixed-background-image {
@@ -99,17 +111,34 @@ a {
   -o-background-size: cover;
   background-size: cover;
 }
-<<<<<<< HEAD
 
 section {
-  padding: 50px;
+  padding: 50px 0 50px 0;
   text-align: center;
+  max-width: 800px;
+  width: 90%;
+  margin: auto;
 }
 
 
 h1 {
   font-family: 'Farsan', cursive;
   text-transform: uppercase;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-family: 'Farsan', cursive;
+  text-transform: uppercase;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 400px;
+  width: 90%;
 }
 
 :target:before {
@@ -118,5 +147,7 @@ h1 {
   height:37px; /* fixed header height*/
   margin: 3px 0 0; /* negative fixed header height */
 }
-=======
->>>>>>> cb2ec0db2deb29f086e168a7442d6fed87ed0a6c
+
+.nowrap {
+  white-space: nowrap;
+}
