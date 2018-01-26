@@ -4,7 +4,8 @@
     <title>A Home for Bi+ Women - biwomenboston.org biwomenboston.org</title>
     <meta name="viewport" content="initial-scale=1">
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Farsan" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Farsan|Slabo+27px" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
@@ -16,13 +17,13 @@
     <div class="nav-container">
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#read" class="nav-link">Read</a></li>
           <li><a href="#write" class="nav-link">Write</a></li>
-          <li><a href="#connect" class="nav-link">Connect</a></li>
-          <li><a href="#pins" class="nav-link">Pins!</a></li>
-          <li class="donate"><a href="#donate" class="nav-link">Please Donate</a></li>
+          <li><a href="#events" class="nav-link">Events</a></li>
+          <li><a href="#shop" class="nav-link">Shop</a></li>
+          <li class="donate-link"><a href="#donate" class="nav-link">Please Donate</a></li>
         </ul>
       </nav>
     </div>
@@ -30,83 +31,206 @@
       <div class="section-container">
         <section id="about">
           <h1>About</h1>
-          <p>
-            Welcome to Bi Women Boston, the home of the Boston Bisexual Women’s Network and the <em>Bi Women Quarterly</em>, produced in Boston for women everywhere.
-          </p>
-          <p>
-            This site is an affirming space for women with bi+ (bi, pan, fluid, and other non-binary sexualities) and those who love and support us.
-          </p>
+          <!-- <div class="container">
+            <div class="row">
+              <div class="col-sm-10 offset-sm-1"> -->
+                <p>
+                  Welcome to Bi Women Boston, the home of the Boston Bisexual Women’s Network and the <em>Bi Women Quarterly</em>, produced in Boston for women everywhere.
+                </p>
+                <p>
+                  This site is an affirming space for women with bi+ (bi, pan, fluid, and other non-binary sexualities) and those who love and support us.
+                </p>
+              <!-- </div>
+            </div>
+          </div> -->
         </section>
       </div>
       <div class="section-container light-background">
         <section id="read">
           <h1>Read</h1>
-          <img src="images/faith-sara-robyn.jpg">
-          <p>
-            The theme for the new Winter 2018 issue of the <span class="nowrap"><em>Bi Women Quarterly</em></span> is <span class="nowrap">&#8220;What I Want.&#8221;</span> <a href="wp-content/uploads/2017/11/Winter-2018.pdf">Read it here</a>.
-          </p>
+          <div class="container-fluid">
+            <div class="row read-row">
+              <div class="read-image col-md-3 offset-md-2">
+                <img src="images/faith-sara-robyn.jpg">
+                <p>
+                  <em>Bi Women Quarterly &ndash; Winter 2018: &#8220;What I Want.&#8221;</em>
+                </p>
+              </div>
+              <div class="read-content col-md-6">
+                <h2>Blazing Trails: What Sara Wants</h2>
+                <h3>&ndash;Robyn Ochs</h3>
+                <p>
+                  On Saturday, November 4th, New York&apos;s LGBT Community Center honored <b>Sara Ramirez</b> with their Trailblazer Award at their 2017 Women&apos;s Event.
+                </p>
+                <p>
+                  I include below my introduction and Sara&apos;s entire speech. What she says is important, powerful, and fits in perfectly with the theme of this issue of Bi Women Quarterly: &#8220;What I Want.&#8221;
+                </p>
+                <p class="align-right">
+                  <a href="wp-content/uploads/2017/11/Winter-2018.pdf">Read more...</a>.
+                </p>
+              </div>
+            </div>
+            <div class="row read-row">
+              <div class="col-12">
+                <a href="#" class="button">More by Robyn Ochs</a>
+                <a href="#" class="button">Authors</a>
+                <a href="#" class="button">Subscribe to Bi Women Quarterly</a>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
       <div class="section-container">
         <section id="write">
           <h1>Write</h1>
-          <div class="container">
+          <div class="container-fluid">
             <div class="row">
-              <div class="col-sm-4">
-                <h2>CALL FOR SUBMISSIONS:</h2>
-                <p>
-                  The theme for Spring 2018 will be &#8220;Chosen Family.&#8221;
-                </p>
-                <p>
-                  <a href="#">Read the full Call for Writing</a>
-                  <br />
-                  <a href="#">Submission Guidelines</a>
-                </p>
+              <div class="write-container col-lg-4">
+                <div class="write-content">
+                  <h2>Spring 2018: Chosen Family</h2>
+                  <p>
+                    Chosen families are groups of people who deliberately choose to play significant roles in each other’s lives. Who makes up your chosen family? How did you come to find each other? What does your chosen family mean to you and your bi+ identity?
+                  </p>
+                  <p>
+                    Submissions due: February 1
+                  </p>
+                </div>
               </div>
-              <div class="col-sm-4">
-                <h2>CALL FOR SUBMISSIONS:</h2>
-                <p>
-                  The theme for Spring 2018 will be &#8220;Chosen Family.&#8221;
-                </p>
-                <p>
-                  <a href="#">Read the full Call for Writing</a>
-                  <br />
-                  <a href="#">Submission Guidelines</a>
-                </p>
+              <div class="write-container col-lg-4">
+                <div class="write-content">
+                  <h2>Summer 2018: Bodies</h2>
+                  <p>
+                    Let’s talk about our bodies: Body image. Gendered bodies. Bodies and health. Changing bodies. Bodies converging and merging. Bodies and attraction. Sexuality and the body. We welcome your personal stories, poetry, artwork, or opinion pieces.
+                  </p>
+                  <p>
+                    Submissions due: May 1
+                  </p>
+                </div>
               </div>
-              <div class="col-sm-4">
-                <h2>CALL FOR SUBMISSIONS:</h2>
-                <p>
-                  The theme for Spring 2018 will be &#8220;Chosen Family.&#8221;
-                </p>
-                <p>
-                  <a href="#">Read the full Call for Writing</a>
-                  <br />
-                  <a href="#">Submission Guidelines</a>
-                </p>
+              <div class="write-container col-lg-4">
+                <div class="write-content">
+                  <h2>Open Call for Submissions</h2>
+                  <p>
+                    We welcome news articles about current issues and events, creative writing, musings, book reviews, calendar listings, letters to the editor, visual art (photos and drawings), poetry, and more.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <a href="#" class="button">Submission Guidelines</a>
               </div>
             </div>
           </div>
         </section>
       </div>
       <div class="section-container fixed-background-image">
-        <section id="connect">
-          <h1>Connect</h1>
+        <section id="events">
+          <h1>Events</h1>
+          <div class="container">
+            <div class="row">
+              <div class="event-content col-md-3">
+                <img src="images/event-feb7.jpg">
+              </div>
+              <div class="event-content col-md-3">
+                <img src="images/event-feb8.jpg">
+              </div>
+              <div class="event-content col-md-3">
+                <img src="images/event-feb10.jpg">
+              </div>
+              <div class="event-content col-md-3">
+                <img src="images/event-feb12.jpg">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <a href="#" class="button">View Calendar</a>
+                <a href="#" class="button">About Brunches</a>
+                <a href="#" class="button">Host an Event!</a>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
-      <div class="section-container">
-        <section id="pins">
-          <h1>Pins</h1>
+      <div class="section-container light-background">
+        <section id="shop">
+          <h1>Shop</h1>
+          <p>
+            All proceeds from sales support the production of the <em>Bi Women Quarterly.</em>
+          </p>
+          <br />
+          <br />
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-3 col-xs-4">
+                <img src="images/pins/PIN_AmorSinFronteras.png" class="pin">
+              </div>
+              <div class="col-sm-3 col-xs-4">
+                <img src="images/pins/PIN_BuildCommunities.png" class="pin">
+              </div>
+              <div class="col-sm-3 col-xs-4">
+                <img src="images/pins/PIN_I-Support.png" class="pin">
+              </div>
+              <div class="col-sm-3 col-xs-4">
+                <img src="images/pins/PIN_IfYouAreNeutral2017.png" class="pin">
+              </div>
+              <div class="col-sm-3 col-xs-4">
+                <img src="images/pins/PIN_LoveOutsideTheLines.png" class="pin">
+              </div>
+              <div class="col-sm-3 col-xs-4">
+                <img src="images/pins/PIN_Non-binary.png" class="pin">
+              </div>
+              <div class="col-sm-3 col-xs-4">
+                <img src="images/pins/PIN_SpeakTruth2Bullsh-t.png" class="pin">
+              </div>
+              <div class="col-sm-3 col-xs-4">
+                <img src="images/pins/PIN_StrongTogether.png" class="pin">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <a href="#" class="button">Go to the Store</a>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
       <div class="section-container">
         <section id="donate">
           <h1>Donate</h1>
+          <p>
+            Bi Women Quarterly is produced by the Boston Bisexual Women&apos;s Network for bi+ women everywhere! We ask for a donation to cover the cost of the newsletter and our outreach efforts, as follows: $0-20 (pay what you can); $20-30 (suggested); $30-99 (supporter); $100 on up (Goddess/Sustainer). We appreciate if you can send more and understand if you need to send less.
+          </p>
+          <p>
+            <a href="#" class="button donate-link">Donate</a>
+          </p>
         </section>
       </div>
     </main>
     <div class="footer-container">
       <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-9">
+              Footer Info<br />
+              More info<br />
+              Links to things<br />
+              We&apos;ll figure it out
+            </div>
+            <div class="col-sm-3">
+              Other links<br />
+              More Links<br />
+              Specific pages<br />
+              Final thought
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              &copy;2018 biwomenboston.org<br />
+              Site by: Melsen Carlsburg and Alana Martin
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
     <script>
@@ -116,7 +240,6 @@
         function isOverflown(headerHeight, availableHeight) {
           return headerHeight > availableHeight;
         }
-
         $(window).resize(function() {        
           $('header').css('font-size', ''); // resets the font size to the stylesheet default
           let fontSize = parseInt($('header').css('font-size'));
@@ -135,13 +258,15 @@
         $(window).scroll(function() {
           $('.nav-container').css('position', ''); // resets the position to the stylesheet default
           $('main').css('padding-top', ''); // resets the padding of main to default
-          let fixedPosition = parseInt($('header').css('height')) + parseInt($('header').css('padding-top')) + parseInt($('header').css('padding-bottom'));
+          let fixedPosition = parseInt($('header').css('height'));
           if ($(window).scrollTop() > fixedPosition) {
             $('.nav-container').css('position', 'fixed');
             $('.nav-container').scrollTop(0);
             $('main').css('padding-top', $('.nav-container').css('height'));
           }
         });
+
+        // $('.read-row').after('<hr/>');
 
       });
 
